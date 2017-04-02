@@ -4,7 +4,7 @@
 let res1 = document.getElementById('result');
 res1.addEventListener('click' , (e) => {
 
-     console.log(localStorage);
+    
      e.preventDefault();
 
      let base = document.getElementById('from');
