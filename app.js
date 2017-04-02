@@ -4,7 +4,7 @@
 let res1 = document.getElementById('result');
 res1.addEventListener('click' , (e) => {
 
-    
+     console.log(localStorage);
      e.preventDefault();
 
      let base = document.getElementById('from');
@@ -18,7 +18,7 @@ res1.addEventListener('click' , (e) => {
            
            let arr =JSON.parse(localStorage.getItem(i));
           
-           if(arr[0] === curr1)
+           if(curr1 === arr[0])
            {
            	  let amount = document.getElementById('First_amount').value ;
            	  amount = amount*arr[1];
